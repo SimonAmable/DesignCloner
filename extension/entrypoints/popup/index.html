@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design Clone</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        width: 280px;
+        background: #12141a;
+        color: #e8eaed;
+        font: 13px/1.4 ui-sans-serif, system-ui, sans-serif;
+      }
+      main {
+        padding: 14px;
+      }
+      h1 {
+        margin: 0 0 8px;
+        font-size: 15px;
+        font-weight: 650;
+      }
+      p {
+        margin: 0 0 12px;
+        color: #c5c9d3;
+      }
+      button {
+        width: 100%;
+        border: 0;
+        border-radius: 8px;
+        padding: 10px 12px;
+        background: #f5c518;
+        color: #111;
+        font: 650 13px/1 ui-sans-serif, system-ui, sans-serif;
+        cursor: pointer;
+      }
+      button:hover {
+        filter: brightness(1.05);
+      }
+      button.secondary {
+        margin-top: 8px;
+        background: #1c2230;
+        color: #e8eaed;
+        border: 1px solid #2a2e38;
+      }
+      .status {
+        margin-top: 10px;
+        min-height: 1.2em;
+        color: #9aa3b5;
+      }
+      .status[data-err='1'] {
+        color: #ff8b8b;
+      }
+      kbd {
+        background: #1c2230;
+        border-radius: 4px;
+        padding: 1px 5px;
+        font-size: 12px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Design Clone</h1>
+      <p>Inspect a section for Cursor. <strong>Copy whole page</strong> snapshots all of <code>body</code> (often too large to paste into chat).</p>
+      <button type="button" id="start">Start inspect on this page</button>
+      <button type="button" class="secondary" id="copy-page">Copy whole page</button>
+      <div class="status" id="status"></div>
+    </main>
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>
