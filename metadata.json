@@ -1,0 +1,6 @@
+{
+  "name": "Design Cloner",
+  "description": "A magical browser extension for vibe coding faster. Design With No Limits - Grab the design. Prompt. Ship.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
