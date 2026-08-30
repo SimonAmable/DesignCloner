@@ -3,49 +3,137 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Design Clone — Privacy Policy</title>
+    <title>Privacy Policy — Design Clone</title>
+    <meta
+      name="description"
+      content="Privacy policy for the Design Clone Chrome extension. On-device copying of selected page HTML and CSS. No accounts, analytics, or data sales."
+    />
     <style>
       body {
         margin: 0;
-        font-family: ui-sans-serif, system-ui, sans-serif;
+        font-family: Inter, ui-sans-serif, system-ui, sans-serif;
         background: #0b0c10;
         color: #e8e8e8;
-        line-height: 1.5;
+        line-height: 1.55;
       }
       main {
-        max-width: 40rem;
+        max-width: 42rem;
         margin: 0 auto;
         padding: 3rem 1.25rem 4rem;
       }
       h1 {
-        font-size: 1.75rem;
-        margin: 0 0 0.5rem;
+        font-size: 1.85rem;
+        margin: 0 0 0.35rem;
+        letter-spacing: -0.02em;
+      }
+      h2 {
+        font-size: 1.05rem;
+        margin: 1.75rem 0 0.5rem;
       }
       p,
       li {
         color: #c5c9d3;
       }
+      a {
+        color: #fff;
+      }
+      .meta {
+        color: #8b909a;
+        font-size: 0.9rem;
+        margin-bottom: 1.5rem;
+      }
     </style>
   </head>
   <body>
     <main>
-      <h1>Design Clone Privacy Policy</h1>
-      <p>Last updated: August 29, 2026</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Design Clone Chrome extension · Last updated: August 30, 2026</p>
+
       <p>
-        Design Clone is a Chrome extension that copies a user-selected page element’s HTML and CSS
-        to the clipboard for use with AI coding tools.
+        This policy describes how the Design Clone browser extension (“the Extension,” “we”)
+        handles information. The Extension is free, has no accounts, and has no backend. It is
+        published in connection with
+        <a href="https://github.com/SimonAmable/DesignCloner">github.com/SimonAmable/DesignCloner</a>.
+      </p>
+
+      <h2>What the Extension does</h2>
+      <p>
+        After you click the toolbar icon or use the inspect shortcut on a page you already have
+        open, Design Clone lets you hover and click a page element. It then copies that element’s
+        HTML and computed CSS to your clipboard as a prompt you can paste into AI coding tools
+        (for example Cursor, Claude, or Lovable). Copying happens only when you take that action.
+      </p>
+
+      <h2>Data we collect</h2>
+      <p>
+        We do not collect, store on our servers, or receive personally identifiable information,
+        health data, financial data, authentication credentials, personal communications, location,
+        browsing history, or activity logs. We do not run analytics, ads, crash reporting, or
+        account systems in the Extension. We do not sell user data. We do not use data for
+        creditworthiness or lending.
       </p>
       <p>
-        We do not collect, sell, or transmit user data. Serialization and clipboard writes happen on
-        your device. The extension does not use accounts, analytics, ads, or a backend.
+        <strong>Website content (processed on your device only):</strong> when you inspect and click
+        an element, the Extension reads the selected DOM subtree in that tab (markup, computed
+        styles, and related stylesheet snippets needed to rebuild the snapshot). That snapshot is
+        written to your clipboard on your device. It is not uploaded to us, not saved in
+        <code>chrome.storage</code>, and not sent to any server operated by Design Clone.
+      </p>
+
+      <h2>Permissions</h2>
+      <p>The Extension requests only:</p>
+      <ul>
+        <li>
+          <strong>activeTab</strong> — short-lived access to the current tab after you start inspect
+          or copy, so the overlay can run on that page.
+        </li>
+        <li>
+          <strong>scripting</strong> — inject the Extension’s own packaged content script into that
+          tab. No remote scripts are loaded.
+        </li>
+        <li>
+          <strong>clipboardWrite</strong> — write the copied snapshot to the clipboard after you
+          click an element (or choose copy page).
+        </li>
+      </ul>
+      <p>There is no <code>storage</code> permission and no host permission for all websites.</p>
+
+      <h2>Remote code</h2>
+      <p>
+        The Extension does not execute remote JavaScript or Wasm. All scripts ship inside the
+        Chrome Web Store package.
+      </p>
+
+      <h2>Third parties</h2>
+      <p>
+        If you paste clipboard contents into another product (an AI coding tool, a chat app, etc.),
+        that product’s privacy policy applies to what you paste. Design Clone does not transmit the
+        snapshot to those products for you.
       </p>
       <p>
-        Website content: when you inspect and click an element, the extension reads that subtree in
-        the current tab so it can copy markup and styles. That snapshot is not uploaded to us. You
-        control what you paste elsewhere.
+        The Chrome Web Store and Google may process install and listing data under Google’s
+        policies. That is separate from the Extension’s on-device copy behavior.
       </p>
-      <p>No preferences or page contents are stored with Chrome’s storage API.</p>
-      <p>Contact: use the support email on the Chrome Web Store listing.</p>
+
+      <h2>Children</h2>
+      <p>
+        The Extension is not directed at children under 13. We do not knowingly collect personal
+        information from children.
+      </p>
+
+      <h2>Changes</h2>
+      <p>
+        We may update this policy when the Extension’s behavior changes. The date at the top will
+        be revised. Continued use after an update means you accept the revised policy.
+      </p>
+
+      <h2>Contact</h2>
+      <p>
+        Questions:
+        <a href="https://simonamable.com" rel="noopener noreferrer">simonamable.com</a>
+        or
+        <a href="https://github.com/SimonAmable/DesignCloner/issues">open an issue on GitHub</a>.
+      </p>
     </main>
   </body>
 </html>

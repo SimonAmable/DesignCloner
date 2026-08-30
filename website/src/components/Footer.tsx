@@ -17,14 +17,22 @@ export const Footer: React.FC = () => {
         </div>
 
         {/* Right Contact Link */}
-        <a
-          href="https://simonamable.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="vbg-copyright vbg-contact-link block text-xs sm:text-sm tracking-[0.14px] text-white/70 transition-colors hover:text-white"
-        >
-          Contact us
-        </a>
+        <div className="flex items-center gap-4">
+          <a
+            href="/privacy.html"
+            className="vbg-copyright vbg-contact-link block text-xs sm:text-sm tracking-[0.14px] text-white/70 transition-colors hover:text-white"
+          >
+            Privacy
+          </a>
+          <a
+            href="https://simonamable.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="vbg-copyright vbg-contact-link block text-xs sm:text-sm tracking-[0.14px] text-white/70 transition-colors hover:text-white"
+          >
+            Contact us
+          </a>
+        </div>
       </div>
 
       {/* Bottom 1-line Credit Line */}

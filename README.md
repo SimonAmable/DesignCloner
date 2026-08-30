@@ -25,3 +25,5 @@ pnpm build
 ```
 
 Then Chrome → `chrome://extensions` → Developer mode → Load unpacked → `extension/.output/chrome-mv3`.
+
+Privacy policy (for the Chrome Web Store listing): `website/public/privacy.html`, served at `/privacy.html` on the live site.
