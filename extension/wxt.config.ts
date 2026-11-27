@@ -5,7 +5,7 @@ export default defineConfig({
     name: 'Design Clone',
     description:
       'Hover any element. Copy HTML, CSS, Tailwind, or JSX for Cursor, Claude, and Lovable.',
-    version: '1.0.1',
+    version: '1.1.0',
     action: {
       default_title: 'Design Clone',
     },
